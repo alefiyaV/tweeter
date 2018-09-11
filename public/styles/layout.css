@@ -19,15 +19,55 @@ body {
   color: #244751;
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
 }
 
 main.container {
   width: 450px;
+  height: 600px;
   margin: 0 auto;
   padding-top: 140px;
   background-color: #ffffff;
 
 
+}
+
+
+
+section.new-tweet {
+
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 2em;
+  padding-bottom: 10px;
+
+
+}
+
+section.new-tweet h2.underline {
+  padding: 15px;
+  padding-bottom: 0px;
+
+}
+
+textarea.textarea {
+  width: 92%;
+  margin: 0 auto;
+  padding: 15px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+span.counter {
+  float: right;
+  margin: 5px 15px;
+
+}
+
+input.tweet-button {
+  margin: 5px 0px 0px 15px;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
