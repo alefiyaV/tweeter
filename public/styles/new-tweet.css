@@ -10,11 +10,11 @@ section.new-tweet {
 
 }
 
-section.new-tweet h2 {
+.new-tweet h2 {
 
   padding: 15px;
   padding-bottom: 0px;
-  border-bottom:  1px, solid, black;
+  border-bottom:  1px, solid;
 
 }
 
