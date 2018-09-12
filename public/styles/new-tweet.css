@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
 section.new-tweet {
@@ -12,9 +18,9 @@ section.new-tweet {
 
 .new-tweet h2 {
 
-  padding: 15px;
-  padding-bottom: 0px;
-  border-bottom:  1px, solid;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-bottom:  1px solid lightgrey;
 
 }
 
