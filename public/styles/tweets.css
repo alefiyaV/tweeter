@@ -5,9 +5,7 @@ html {
   box-sizing: inherit;
 }
 
-
 article.tweet {
-
   background-color: #fff;
   border-radius: 5px;
   margin: 2em;
@@ -16,48 +14,20 @@ article.tweet {
   opacity: 0.70;
 }
 
+article.tweet p {
+  padding: 0px 10px;
 
+}
 
 article.tweet:hover {
   opacity: 1;
 }
 
 article.tweet:hover img.interaction {
-  opacity: 1;
-}
-
-article.tweet p {
-  padding: 0px 10px;
-
-}
-
-footer img.interaction {
   float: right;
-  margin: 0px 5px;
-  padding-top: 0px;
-  opacity: 0.0;
-
-}
-
-article:hover img.interaction {
-  float: right;
-  margin: 5px
-  padding: 5px;
-  padding-right: 2px;
+  margin: 5px 7px 5px 0px;
   opacity: 1;
 
-}
-
-footer.tweet-footer {
-  border-top: 1px solid #daedbb;
-  padding-top: 10px;
-}
-
-footer.tweet-footer p {
-  padding: 5px 5px 0px 5px;
-  margin-bottom: 0px;
-
-  display: inline;
 }
 
 header.tweet-header {
@@ -66,7 +36,6 @@ header.tweet-header {
   margin: 0 auto;
   background-color: #daedbb;
   height: 70px;
-  width: 100%;
 
 }
 
@@ -79,8 +48,7 @@ header img.avatar {
   width: 50px;
   height: 50px;
   float: left;
-  margin-left: 15px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 15px;
   clear: both;
   border-radius: 5px;
 
@@ -92,5 +60,26 @@ header h3 {
   font-size: 1.5em;
   line-height: 70px;
 }
+
+footer.tweet-footer {
+  border-top: 1px solid #daedbb;
+  padding-top: 10px;
+  padding: 5px 5px 0px 5px;
+  margin-bottom: 0px;
+  font-size: .8em;
+}
+
+footer img.interaction {
+  float: right;
+  margin: 0px 5px;
+  padding-top: 0px;
+  opacity: 0.0;
+
+}
+
+
+
+
+
 
 
