@@ -82,5 +82,12 @@ $('#new-tweet-form').on('submit', function (e) {
   //renderTweets(data);
   callTweetsFromMongoDb();
 
+  $('.new-tweet').hide();
+  $('.tweet-button').on('click', function() {
+    $('.new-tweet').toggle();
+  });
+
+
+
 
 }); //Document ready ends here.

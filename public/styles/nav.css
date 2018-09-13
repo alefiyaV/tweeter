@@ -31,3 +31,22 @@ html {
   line-height: 80px;
 
 }
+
+#nav-bar input.tweet-button {
+  float: right;
+  padding: 12px;
+  line-height: 25px;
+  margin-top: 14px;
+  border: solid 1px #00a087;
+  font-weight: 700;
+
+}
+
+#nav-bar input.tweet-button:hover {
+  float: right;
+  padding: 12px;
+  line-height: 25px;
+  margin-top: 14px;
+  background-color: #ff9987;
+  font-weight: 700;
+}
