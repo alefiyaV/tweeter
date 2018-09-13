@@ -85,6 +85,7 @@ $('#new-tweet-form').on('submit', function (e) {
   $('.new-tweet').hide();
   $('.tweet-button').on('click', function() {
     $('.new-tweet').toggle();
+    $('textarea#tweet-text').focus();
   });
 
 
