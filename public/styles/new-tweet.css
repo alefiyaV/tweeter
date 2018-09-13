@@ -42,4 +42,12 @@ span.counter {
 
 input.tweet-button {
   margin: 5px 0px 0px 15px;
+
+}
+
+span.error {
+  color: red;
+  font-weight: 700;
+
+
 }

@@ -48,6 +48,8 @@ function callTweetsFromMongoDb(){
 
 }
 
+$('#error').hide();
+
 $('#new-tweet-form').on('submit', function (e) {
   e.preventDefault();
 
@@ -55,7 +57,10 @@ $('#new-tweet-form').on('submit', function (e) {
   let text = $('#tweet-text').val()
 
   if (text === "" || text === null || text.length > 140) {
-    alert("Please enter a valid tweet");
+    //console.log("didn't work")
+      $('#error').show('fast');
+
+    //alert("Please enter a valid tweet");
     return;
   }
   //console.log(formData);
@@ -72,6 +77,7 @@ $('#new-tweet-form').on('submit', function (e) {
   }).then(function () {
     $('#tweet-text').val('');
     $('#char-counter').text(140);
+    $('#error').text();
     callTweetsFromMongoDb();
   });
   //   return $.ajax('/');
@@ -86,6 +92,10 @@ $('#new-tweet-form').on('submit', function (e) {
   $('.tweet-button').on('click', function() {
     $('.new-tweet').toggle();
     $('textarea#tweet-text').focus();
+  $('#load-more-tweets').on('click', function() {
+    $('#error').hide();
+  })
+
   });
 
 
