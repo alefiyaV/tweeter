@@ -1,8 +1,12 @@
-# Tweeter Project
+# Tweeter Review Feed for the Classroom
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone customzied to suit the needs of a Grade 8 Science teacher to interact with their students in terms of review. Students can post questions under 140 characters long which their peers can then repost with answers, like, or flag for being inappropriate. The teacher would also have access to answer questions or guide students on the right path. In the future this application could implement different API's for language control and making sure students' questions are on track. Additionally, having these questions on a database could help shape future curriculums and pedagogy.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+The colour story is indicative of research with how yellows and oranges are conducive to learning and keeping energy and engagement high.
+
+None of the images used are owned by me, and will be changed to payed images in the future.
+
+Entire project was done in collaboration with bguids91 on GitHub. Along with much mentor help and guidance.
 
 ## Getting Started
 
@@ -15,3 +19,16 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- Express
+- Md5
+- Mongodb
+
+## Screenshots
+
+!["Default screen"](https://raw.githubusercontent.com/alefiyaV/tweeter/master/docs/initial_page.png)
+!["Composing a question with hover over compose tweet"](https://raw.githubusercontent.com/alefiyaV/tweeter/master/docs/new-tweet.png)
+!["Invalid question"](https://raw.githubusercontent.com/alefiyaV/tweeter/master/docs/error.png)
+
+Thank you!
