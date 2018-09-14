@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   function renderTweets(tweets) {
     for (content in tweets) {
       let tweet = tweets[content]
@@ -16,7 +15,7 @@ $(document).ready(function() {
     let $handle = $('<p>').addClass('handle').text(`${tweet.user.handle}`);
     let $content = $('<p>').addClass('content').text(`${tweet.content.text}`);
     let $footer = $('<footer>').addClass('tweet-footer');
-    let $timestamp = $('<p>').addClass('time-stamp').text(`${tweet.created_at}`);
+    let $timestamp = $('<p>').addClass('time-stamp').text(`Question posted on ${tweet.created_at}`);
     let $interactionImgs1 = $('<img>').addClass('interaction').attr('src', '/images/flag.png');
     let $interactionImgs2 = $('<img>').addClass('interaction').attr('src', '/images/heart.png');
     let $interactionImgs3 = $('<img>').addClass('interaction').attr('src', '/images/retweet.png');
@@ -29,40 +28,34 @@ $(document).ready(function() {
     return $tweet
   };
 
+  $.ajax('/tweets').done(renderTweets);
 
-$.ajax('/tweets').done(renderTweets);
-
-function callTweetsFromMongoDb(){
-
+  function callTweetsFromMongoDb(){
     $.ajax({
       url: '/tweets',
       method: 'GET',
       success: function(result){
         console.log("we are in success");
         renderTweets(result);
-      },
+    },
       error: function(err){
         console.log("we are in error");
       }
-  });
+    });
+  }
 
-}
+  $('#error').hide();
 
-$('#error').hide();
-
-$('#new-tweet-form').on('submit', function (e) {
+  $('#new-tweet-form').on('submit', function (e) {
   e.preventDefault();
 
   let formData = $('#new-tweet-form').serialize();
   let text = $('#tweet-text').val()
 
-  if (text.length > 140 || text === "" || text === null) {
+  if (text === "" || text === null || text.length > 140) {
     $('#error').show(200);
-  } else {
     return;
   }
-
-
 
   $.ajax({
     method:'POST',
@@ -79,26 +72,18 @@ $('#new-tweet-form').on('submit', function (e) {
     $('#char-counter').text(140);
     $('#error').text();
     callTweetsFromMongoDb();
+    });
   });
-  //   return $.ajax('/');
-  // }).then(renderTweets);
-});
 
-  //Starting point of the script.
-  //renderTweets(data);
   callTweetsFromMongoDb();
-  $('#error').hide();
+
   $('.new-tweet').hide();
   $('.tweet-button').on('click', function() {
     $('.new-tweet').slideDown(500);
     $('textarea#tweet-text').focus();
   $('#load-more-tweets').on('click', function() {
-
-  })
+    $('#error').hide();
+    })
 
   });
-
-
-
-
 }); //Document ready ends here.

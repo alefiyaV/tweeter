@@ -10,7 +10,7 @@ article.tweet {
   border-radius: 4px;
   margin: 2em;
   padding-bottom: 10px;
-  border: 1px solid #ffd775;
+  border: 1px solid #ffbb14;
   opacity: 0.70;
   color: #0f214f;
 }
@@ -32,15 +32,12 @@ article.tweet:hover img.interaction {
 
 }
 
-
-
 header.tweet-header {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   margin: 0 auto;
   background-color: #ffd775;
   height: 70px;
-
 }
 
 header.tweet-header p.handle {
