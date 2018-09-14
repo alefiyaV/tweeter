@@ -11,14 +11,16 @@ html {
   z-index: 1;
   height: 80px;
   width: 100%;
-  background-color: #1dba8e;
-  color: #e8fdff;
+  background-color: #f7c956;
+  color: #143077;
   padding: 0em 2em;
+  font-weight: bolder;
 }
 
 #nav-bar img.logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
   float: left;
 }
 
@@ -35,7 +37,8 @@ html {
   padding: 12px;
   line-height: 25px;
   margin-top: 14px;
-  border: solid 1px #00a087;
+  background-color: #91bdff;
+  border: solid 1px #91bdff;
   font-weight: 700;
 
 }
@@ -45,12 +48,13 @@ html {
   padding: 12px;
   line-height: 25px;
   margin-top: 14px;
-  background-color: #ff9987;
+  background-color: #0f214f;
+  color: white;
   font-weight: 700;
 }
 
 footer#footer-bar {
-background-color: #117257;
+background-color: #ffbb14;
 height: 35px;
 bottom: 0;
 width: 100%;

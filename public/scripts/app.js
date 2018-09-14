@@ -56,14 +56,14 @@ $('#new-tweet-form').on('submit', function (e) {
   let formData = $('#new-tweet-form').serialize();
   let text = $('#tweet-text').val()
 
-  if (text === "" || text === null || text.length > 140) {
-    //console.log("didn't work")
-      $('#error').show(200);
-
-    //alert("Please enter a valid tweet");
+  if (text.length > 140 || text === "" || text === null) {
+    $('#error').show(200);
+  } else {
     return;
   }
-  //console.log(formData);
+
+
+
   $.ajax({
     method:'POST',
     url: '/tweets',
@@ -87,13 +87,13 @@ $('#new-tweet-form').on('submit', function (e) {
   //Starting point of the script.
   //renderTweets(data);
   callTweetsFromMongoDb();
-
+  $('#error').hide();
   $('.new-tweet').hide();
   $('.tweet-button').on('click', function() {
     $('.new-tweet').slideDown(500);
     $('textarea#tweet-text').focus();
   $('#load-more-tweets').on('click', function() {
-    $('#error').hide();
+
   })
 
   });

@@ -12,6 +12,7 @@ section.new-tweet {
   border-radius: 5px;
   margin: 2em;
   padding-bottom: 10px;
+  color: #0f214f;
 
 
 }
@@ -50,12 +51,13 @@ span#error {
   color: red;
   font-weight: 700;
   margin-left: 10px;
-  background-color: #fffbc9;
+  background-color: #e1e3e8;
   border: 1px red solid;
   position: relative;
 
 
 }
+
 
 input#load-more-tweets {
   padding: 5px;
