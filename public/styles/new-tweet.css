@@ -18,36 +18,45 @@ section.new-tweet {
 
 .new-tweet h2 {
 
-  padding: 10px 15px;
+  padding: 10px 10px;
   margin-bottom: 10px;
   border-bottom:  1px solid lightgrey;
 
 }
 
 textarea.textarea {
-  width: 92%;
+  width: 95%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 10px;
   display: block;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
 
 }
 
 span.counter {
   float: right;
-  margin: 5px 15px;
+  margin: 15px 10px 0px 15px;
+
 
 }
 
-input.tweet-button {
-  margin: 5px 0px 0px 15px;
+input#load-more-tweets {
+  margin: 15px 0px 0px 15px;
 
 }
 
 span#error {
+  padding: 12px;
   color: red;
   font-weight: 700;
+  margin-left: 10px;
+  background-color: #fffbc9;
+  border: 1px red solid;
+  position: relative;
 
 
+}
+
+input#load-more-tweets {
+  padding: 5px;
 }

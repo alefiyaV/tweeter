@@ -8,12 +8,10 @@ html {
 
 #nav-bar {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  z-index: 1;
   height: 80px;
   width: 100%;
-  background-color: #00a087;
+  background-color: #1dba8e;
   color: #e8fdff;
   padding: 0em 2em;
 }
@@ -49,4 +47,13 @@ html {
   margin-top: 14px;
   background-color: #ff9987;
   font-weight: 700;
+}
+
+footer#footer-bar {
+background-color: #117257;
+height: 35px;
+bottom: 0;
+width: 100%;
+
+
 }

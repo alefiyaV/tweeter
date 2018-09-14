@@ -58,7 +58,7 @@ $('#new-tweet-form').on('submit', function (e) {
 
   if (text === "" || text === null || text.length > 140) {
     //console.log("didn't work")
-      $('#error').show('fast');
+      $('#error').show(200);
 
     //alert("Please enter a valid tweet");
     return;
@@ -90,7 +90,7 @@ $('#new-tweet-form').on('submit', function (e) {
 
   $('.new-tweet').hide();
   $('.tweet-button').on('click', function() {
-    $('.new-tweet').toggle();
+    $('.new-tweet').slideDown(500);
     $('textarea#tweet-text').focus();
   $('#load-more-tweets').on('click', function() {
     $('#error').hide();
